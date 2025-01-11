@@ -21,7 +21,7 @@ struct ContentView: View {
             VStack(spacing: 10) { // spacingを20から10に減少
                 HStack { // ピッカーを横に並べる
                     VStack {
-                        Picker("編集中...", selection: $selectedMinutes) {
+                        Picker("", selection: $selectedMinutes) {
                             ForEach(0..<60) { minute in
                                 Text("\(minute)")
                                     .tag(minute)
@@ -39,7 +39,7 @@ struct ContentView: View {
                     }
 
                     VStack {
-                        Picker("編集中...", selection: $selectedSeconds) {
+                        Picker("", selection: $selectedSeconds) {
                             ForEach(0..<60) { second in
                                 Text("\(second)")
                                     .tag(second)
@@ -66,9 +66,10 @@ struct ContentView: View {
                 }
                 
                 if let endTime = endTime {
-                    Text(endTime.formatted(.dateTime.month().day().hour().minute()))
+                    Text(endTime.formatted(date: .numeric, time: .shortened))
                         .font(.caption)
                         .foregroundColor(.gray)
+                        .padding(.bottom, 5)
                 }
 
                 Button(action: {
@@ -91,6 +92,7 @@ struct ContentView: View {
                 timer?.invalidate()
             }
         }
+        .scrollDisabled(true) // スクロールを無効化
     }
 
     func updateTimeRemaining() {
