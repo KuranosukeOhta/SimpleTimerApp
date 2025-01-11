@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A28B93E52D32C5A800736352 /* SinpleTimerApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A28B93E62D32C5A800736352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28B93D82D32C5A800736352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28B93E32D32C5A800736352;
+			remoteInfo = "SinpleTimerApp Watch App";
+		};
+		A28B93F72D32C5AA00736352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28B93D82D32C5A800736352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28B93E32D32C5A800736352;
+			remoteInfo = "SinpleTimerApp Watch App";
+		};
+		A28B94012D32C5AA00736352 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A28B93D82D32C5A800736352 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A28B93E32D32C5A800736352;
+			remoteInfo = "SinpleTimerApp Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A28B940D2D32C5AA00736352 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A28B93E52D32C5A800736352 /* SinpleTimerApp Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A28B93DE2D32C5A800736352 /* SinpleTimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinpleTimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SinpleTimerApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28B93F62D32C5AA00736352 /* SinpleTimerApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SinpleTimerApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28B94002D32C5AA00736352 /* SinpleTimerApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SinpleTimerApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A28B93E82D32C5A800736352 /* SinpleTimerApp Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SinpleTimerApp Watch App";
+			sourceTree = "<group>";
+		};
+		A28B93F92D32C5AA00736352 /* SinpleTimerApp Watch AppTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SinpleTimerApp Watch AppTests";
+			sourceTree = "<group>";
+		};
+		A28B94032D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "SinpleTimerApp Watch AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A28B93E12D32C5A800736352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28B93F32D32C5AA00736352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28B93FD2D32C5AA00736352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A28B93D72D32C5A800736352 = {
+			isa = PBXGroup;
+			children = (
+				A28B93E82D32C5A800736352 /* SinpleTimerApp Watch App */,
+				A28B93F92D32C5AA00736352 /* SinpleTimerApp Watch AppTests */,
+				A28B94032D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */,
+				A28B93DF2D32C5A800736352 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A28B93DF2D32C5A800736352 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A28B93DE2D32C5A800736352 /* SinpleTimerApp.app */,
+				A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */,
+				A28B93F62D32C5AA00736352 /* SinpleTimerApp Watch AppTests.xctest */,
+				A28B94002D32C5AA00736352 /* SinpleTimerApp Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A28B93DD2D32C5A800736352 /* SinpleTimerApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28B940E2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp" */;
+			buildPhases = (
+				A28B93DC2D32C5A800736352 /* Resources */,
+				A28B940D2D32C5AA00736352 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28B93E72D32C5A800736352 /* PBXTargetDependency */,
+			);
+			name = SinpleTimerApp;
+			packageProductDependencies = (
+			);
+			productName = SinpleTimerApp;
+			productReference = A28B93DE2D32C5A800736352 /* SinpleTimerApp.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28B940A2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch App" */;
+			buildPhases = (
+				A28B93E02D32C5A800736352 /* Sources */,
+				A28B93E12D32C5A800736352 /* Frameworks */,
+				A28B93E22D32C5A800736352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A28B93E82D32C5A800736352 /* SinpleTimerApp Watch App */,
+			);
+			name = "SinpleTimerApp Watch App";
+			packageProductDependencies = (
+			);
+			productName = "SinpleTimerApp Watch App";
+			productReference = A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A28B93F52D32C5AA00736352 /* SinpleTimerApp Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28B94112D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppTests" */;
+			buildPhases = (
+				A28B93F22D32C5AA00736352 /* Sources */,
+				A28B93F32D32C5AA00736352 /* Frameworks */,
+				A28B93F42D32C5AA00736352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28B93F82D32C5AA00736352 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A28B93F92D32C5AA00736352 /* SinpleTimerApp Watch AppTests */,
+			);
+			name = "SinpleTimerApp Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "SinpleTimerApp Watch AppTests";
+			productReference = A28B93F62D32C5AA00736352 /* SinpleTimerApp Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A28B93FF2D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A28B94142D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppUITests" */;
+			buildPhases = (
+				A28B93FC2D32C5AA00736352 /* Sources */,
+				A28B93FD2D32C5AA00736352 /* Frameworks */,
+				A28B93FE2D32C5AA00736352 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A28B94022D32C5AA00736352 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A28B94032D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */,
+			);
+			name = "SinpleTimerApp Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "SinpleTimerApp Watch AppUITests";
+			productReference = A28B94002D32C5AA00736352 /* SinpleTimerApp Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A28B93D82D32C5A800736352 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					A28B93DD2D32C5A800736352 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A28B93E32D32C5A800736352 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					A28B93F52D32C5AA00736352 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A28B93E32D32C5A800736352;
+					};
+					A28B93FF2D32C5AA00736352 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = A28B93E32D32C5A800736352;
+					};
+				};
+			};
+			buildConfigurationList = A28B93DB2D32C5A800736352 /* Build configuration list for PBXProject "SinpleTimerApp" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A28B93D72D32C5A800736352;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A28B93DF2D32C5A800736352 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A28B93DD2D32C5A800736352 /* SinpleTimerApp */,
+				A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */,
+				A28B93F52D32C5AA00736352 /* SinpleTimerApp Watch AppTests */,
+				A28B93FF2D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A28B93DC2D32C5A800736352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28B93E22D32C5A800736352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28B93F42D32C5AA00736352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28B93FE2D32C5AA00736352 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A28B93E02D32C5A800736352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28B93F22D32C5AA00736352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A28B93FC2D32C5AA00736352 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A28B93E72D32C5A800736352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+			targetProxy = A28B93E62D32C5A800736352 /* PBXContainerItemProxy */;
+		};
+		A28B93F82D32C5AA00736352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+			targetProxy = A28B93F72D32C5AA00736352 /* PBXContainerItemProxy */;
+		};
+		A28B94022D32C5AA00736352 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+			targetProxy = A28B94012D32C5AA00736352 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A28B94082D32C5AA00736352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A28B94092D32C5AA00736352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A28B940B2D32C5AA00736352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SinpleTimerApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 279N7NDD2S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		A28B940C2D32C5AA00736352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SinpleTimerApp Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 279N7NDD2S;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		A28B940F2D32C5AA00736352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 279N7NDD2S;
+				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A28B94102D32C5AA00736352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 279N7NDD2S;
+				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A28B94122D32C5AA00736352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinpleTimerApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SinpleTimerApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		A28B94132D32C5AA00736352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinpleTimerApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SinpleTimerApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+		A28B94152D32C5AA00736352 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SinpleTimerApp Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Debug;
+		};
+		A28B94162D32C5AA00736352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SinpleTimerApp Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 11.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A28B93DB2D32C5A800736352 /* Build configuration list for PBXProject "SinpleTimerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28B94082D32C5AA00736352 /* Debug */,
+				A28B94092D32C5AA00736352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28B940A2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28B940B2D32C5AA00736352 /* Debug */,
+				A28B940C2D32C5AA00736352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28B940E2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28B940F2D32C5AA00736352 /* Debug */,
+				A28B94102D32C5AA00736352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28B94112D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28B94122D32C5AA00736352 /* Debug */,
+				A28B94132D32C5AA00736352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A28B94142D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A28B94152D32C5AA00736352 /* Debug */,
+				A28B94162D32C5AA00736352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A28B93D82D32C5A800736352 /* Project object */;
+}
