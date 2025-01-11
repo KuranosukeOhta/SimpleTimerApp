@@ -8,83 +8,125 @@
 import SwiftUI
 import WatchKit
 
-struct ContentView: View {
-    @State private var selectedMinutes = 0 // 初期選択分を0分に設定
-    @State private var selectedSeconds = 10 // 初期選択秒を10秒に設定
-    @State private var timeRemaining = 10 // カウントダウンの初期値
-    @State private var timer: Timer? // タイマーを保持するための変数
-    @State private var hapticTimer: Timer? // 触覚フィードバック用のタイマー
-    @State private var endTime: Date? // 終了予定時刻を保持する変数を追加
-
+struct TimePickerView: View {
+    @Binding var minutes: Int
+    @Binding var seconds: Int
+    @Binding var isMinutesFocused: Bool
+    @Binding var isSecondsFocused: Bool
+    @Binding var isEditing: Bool  // 編集中かどうかを管理
+    
     var body: some View {
-        ScrollView { // VStackをScrollViewでラップしてスクロール可能にする
-            VStack(spacing: 10) { // spacingを20から10に減少
-                HStack { // ピッカーを横に並べる
-                    VStack {
-                        Picker("", selection: $selectedMinutes) {
-                            ForEach(0..<60) { minute in
-                                Text("\(minute)")
-                                    .tag(minute)
-                                    .foregroundColor(selectedMinutes == minute ? .green : .white)
-                                    .font(selectedMinutes == minute ? .title : .body)
-                                    .animation(.easeInOut(duration: 0.1), value: selectedMinutes)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 100)
-                        
-                        Text("分")
-                            .font(.caption)
-                    }
-
-                    VStack {
-                        Picker("", selection: $selectedSeconds) {
-                            ForEach(0..<60) { second in
-                                Text("\(second)")
-                                    .tag(second)
-                                    .foregroundColor(selectedSeconds == second ? .green : .white)
-                                    .font(selectedSeconds == second ? .title : .body)
-                                    .animation(.easeInOut(duration: 0.1), value: selectedSeconds)
-                            }
-                        }
-                        .pickerStyle(WheelPickerStyle())
-                        .frame(maxWidth: .infinity)
-                        .frame(height: 100)
-                        
-                        Text("秒")
-                            .font(.caption)
+        HStack {
+            VStack {
+                Picker("", selection: $minutes) {
+                    ForEach(0..<60) { minute in
+                        Text("\(minute)")
+                            .tag(minute)
+                            .foregroundColor(isEditing && minutes == minute ? .green : .white)
+                            .font(minutes == minute ? .title : .body)
+                            .animation(.easeInOut(duration: 0.1), value: minutes)
                     }
                 }
-                .onChange(of: selectedMinutes) { oldValue, newValue in 
-                    updateTimeRemaining()
-                    updateEndTime()
-                }
-                .onChange(of: selectedSeconds) { oldValue, newValue in 
-                    updateTimeRemaining()
-                    updateEndTime()
+                .pickerStyle(WheelPickerStyle())
+                .frame(height: 80)
+                .opacity(isMinutesFocused ? 1.0 : 0.7)
+                .onTapGesture {
+                    isMinutesFocused = true
+                    isSecondsFocused = false
+                    isEditing = true
                 }
                 
-                if let endTime = endTime {
-                    Text(endTime.formatted(date: .numeric, time: .shortened))
-                        .font(.caption)
-                        .foregroundColor(.gray)
-                        .padding(.bottom, 5)
-                }
-
-                Button(action: {
-                    startCountdown()
-                }) {
-                    Text("タイマー開始")
-                        .frame(maxWidth: .infinity)
-                }
-                .buttonStyle(BorderedButtonStyle(tint: .orange))
-                
-                // Haptics Previewボタンをコメントアウト
-                //                Button("Haptics Preview", action: { hapticsPreview() })
-                //                    .buttonStyle(BorderedButtonStyle())
+                Text("分")
+                    .font(.caption)
+                    .padding(.top, -5)
             }
-            .padding(.top, 5) // 上部のpaddingを15から5に減少
+
+            VStack {
+                Picker("", selection: $seconds) {
+                    ForEach(0..<60) { second in
+                        Text("\(second)")
+                            .tag(second)
+                            .foregroundColor(isEditing && seconds == second ? .green : .white)
+                            .font(seconds == second ? .title : .body)
+                            .animation(.easeInOut(duration: 0.1), value: seconds)
+                    }
+                }
+                .pickerStyle(WheelPickerStyle())
+                .frame(height: 80)
+                .opacity(isSecondsFocused ? 1.0 : 0.7)
+                .onTapGesture {
+                    isSecondsFocused = true
+                    isMinutesFocused = false
+                    isEditing = true
+                }
+                
+                Text("秒")
+                    .font(.caption)
+                    .padding(.top, -5)
+            }
+        }
+    }
+}
+
+struct ContentView: View {
+    @State private var selectedMinutes = 0
+    @State private var selectedSeconds = 10
+    @State private var timeRemaining = 10
+    @State private var timer: Timer?
+    @State private var hapticTimer: Timer?
+    @State private var endTime: Date?
+    @State private var isRunning = false
+    @State private var isMinutesPickerFocused = false
+    @State private var isSecondsPickerFocused = false
+    @State private var isEditing = true  // 編集状態の管理を追加
+    
+    var body: some View {
+        GeometryReader { geometry in
+            ScrollView {
+                VStack(spacing: 5) {
+                    TimePickerView(
+                        minutes: $selectedMinutes,
+                        seconds: $selectedSeconds,
+                        isMinutesFocused: $isMinutesPickerFocused,
+                        isSecondsFocused: $isSecondsPickerFocused,
+                        isEditing: $isEditing
+                    )
+                    .onChange(of: selectedMinutes) { oldValue, newValue in 
+                        updateTimeRemaining()
+                        updateEndTime()
+                    }
+                    .onChange(of: selectedSeconds) { oldValue, newValue in 
+                        updateTimeRemaining()
+                        updateEndTime()
+                    }
+                    
+                    if let endTime = endTime {
+                        Text(endTime.formatted(date: .numeric, time: .shortened))
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                            .padding(.bottom, 5)
+                    }
+
+                    Button(action: {
+                        isMinutesPickerFocused = false
+                        isSecondsPickerFocused = false
+                        isEditing = false  // 編集状態を解除
+                        
+                        if isRunning {
+                            pauseTimer()
+                        } else {
+                            startCountdown()
+                        }
+                    }) {
+                        Text(isRunning ? "一時停止" : "開始")
+                            .frame(maxWidth: .infinity)
+                    }
+                    .buttonStyle(BorderedButtonStyle(tint: .orange))
+                }
+                .padding(.top, 0)
+                .frame(minHeight: geometry.size.height)
+            }
+            .scrollDisabled(geometry.size.height >= geometry.frame(in: .global).height)
             .onAppear {
                 startAppAlert()
             }
@@ -92,7 +134,6 @@ struct ContentView: View {
                 timer?.invalidate()
             }
         }
-        .scrollDisabled(true) // スクロールを無効化
     }
 
     func updateTimeRemaining() {
@@ -106,27 +147,43 @@ struct ContentView: View {
     }
 
     func startCountdown() {
-        timer?.invalidate() // 既存のタイマーを無効にする
-        timeRemaining = selectedMinutes * 60 + selectedSeconds // カウントダウンをリセット
-        updateEndTime() // タイマー開始時に終了時刻を更新
+        timer?.invalidate()
+        if !isRunning {
+            // タイマーが停止状態から開始される場合のみ初期化
+            timeRemaining = selectedMinutes * 60 + selectedSeconds
+            updateEndTime()
+        }
         
         // タイマー開始時の触覚フィードバック
         WKInterfaceDevice.current().play(.start)
+        
+        isRunning = true
+        isEditing = false  // タイマー開始時に編集状態を解除
 
         // 1秒ごとにカウントダウンを更新するタイマーを設定
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             if timeRemaining > 0 {
-                timeRemaining -= 1 // 残り時間を1秒減らす
-                // ピッカーの値をアニメーション付きで更新
+                timeRemaining -= 1
                 withAnimation(.easeInOut(duration: 0.3)) {
                     selectedMinutes = timeRemaining / 60
                     selectedSeconds = timeRemaining % 60
                 }
             } else {
-                timer?.invalidate() // 残り時間が0になったらタイマーを無効にする
-                alertTimer() // タイマー終了時の処理を呼び出す
+                timer?.invalidate()
+                isRunning = false
+                isEditing = true  // タイマー終了時に編集状態を有効化
+                alertTimer()
             }
         }
+    }
+
+    func pauseTimer() {
+        timer?.invalidate()
+        timer = nil
+        isRunning = false
+        isEditing = true  // 一時停止時に編集状態を有効化
+        // 一時停止時の触覚フィードバック
+        WKInterfaceDevice.current().play(.stop)
     }
 
     func alertTimer() {
