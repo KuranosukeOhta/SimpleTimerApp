@@ -20,8 +20,6 @@ struct ContentView: View {
             VStack {
                 HStack { // ピッカーを横に並べる
                     VStack {
-                        Text("分")
-                            .font(.caption)
                         Picker("編集中...", selection: $selectedMinutes) {
                             ForEach(0..<60) { minute in
                                 Text("\(minute)")
@@ -34,11 +32,12 @@ struct ContentView: View {
                         .pickerStyle(WheelPickerStyle())
                         .frame(maxWidth: .infinity)
                         .frame(height: 100)
+                        
+                        Text("分")
+                            .font(.caption)
                     }
 
                     VStack {
-                        Text("秒")
-                            .font(.caption)
                         Picker("編集中...", selection: $selectedSeconds) {
                             ForEach(0..<60) { second in
                                 Text("\(second)")
@@ -51,6 +50,9 @@ struct ContentView: View {
                         .pickerStyle(WheelPickerStyle())
                         .frame(maxWidth: .infinity)
                         .frame(height: 100)
+                        
+                        Text("秒")
+                            .font(.caption)
                     }
                 }
                 .onChange(of: selectedMinutes) { oldValue, newValue in 
@@ -60,9 +62,10 @@ struct ContentView: View {
                     updateTimeRemaining()
                 }
                 
-                Text("残り時間: \(timeRemaining) 秒")
-                    .font(.body)
-                    .padding()
+                // 残り時間の表示をコメントアウト
+                //Text("残り時間: \(timeRemaining) 秒")
+                //    .font(.body)
+                //    .padding()
 
                 Button(action: {
                     startCountdown()
