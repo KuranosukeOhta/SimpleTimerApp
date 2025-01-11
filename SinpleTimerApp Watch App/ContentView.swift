@@ -14,10 +14,11 @@ struct ContentView: View {
     @State private var timeRemaining = 10 // カウントダウンの初期値
     @State private var timer: Timer? // タイマーを保持するための変数
     @State private var hapticTimer: Timer? // 触覚フィードバック用のタイマー
+    @State private var endTime: Date? // 終了予定時刻を保持する変数を追加
 
     var body: some View {
         ScrollView { // VStackをScrollViewでラップしてスクロール可能にする
-            VStack {
+            VStack(spacing: 10) { // spacingを20から10に減少
                 HStack { // ピッカーを横に並べる
                     VStack {
                         Picker("編集中...", selection: $selectedMinutes) {
@@ -57,15 +58,18 @@ struct ContentView: View {
                 }
                 .onChange(of: selectedMinutes) { oldValue, newValue in 
                     updateTimeRemaining()
+                    updateEndTime()
                 }
                 .onChange(of: selectedSeconds) { oldValue, newValue in 
                     updateTimeRemaining()
+                    updateEndTime()
                 }
                 
-                // 残り時間の表示をコメントアウト
-                //Text("残り時間: \(timeRemaining) 秒")
-                //    .font(.body)
-                //    .padding()
+                if let endTime = endTime {
+                    Text(endTime.formatted(.dateTime.month().day().hour().minute()))
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                }
 
                 Button(action: {
                     startCountdown()
@@ -79,7 +83,7 @@ struct ContentView: View {
                 //                Button("Haptics Preview", action: { hapticsPreview() })
                 //                    .buttonStyle(BorderedButtonStyle())
             }
-            .padding()
+            .padding(.top, 5) // 上部のpaddingを15から5に減少
             .onAppear {
                 startAppAlert()
             }
@@ -94,9 +98,15 @@ struct ContentView: View {
         timeRemaining = selectedMinutes * 60 + selectedSeconds
     }
 
+    func updateEndTime() {
+        let totalSeconds = selectedMinutes * 60 + selectedSeconds
+        endTime = Date().addingTimeInterval(TimeInterval(totalSeconds))
+    }
+
     func startCountdown() {
         timer?.invalidate() // 既存のタイマーを無効にする
         timeRemaining = selectedMinutes * 60 + selectedSeconds // カウントダウンをリセット
+        updateEndTime() // タイマー開始時に終了時刻を更新
         
         // タイマー開始時の触覚フィードバック
         WKInterfaceDevice.current().play(.start)
