@@ -27,6 +27,8 @@ struct ContentView: View {
                                 Text("\(minute)")
                                     .tag(minute)
                                     .foregroundColor(selectedMinutes == minute ? .green : .white)
+                                    .font(selectedMinutes == minute ? .title : .body)
+                                    .animation(.easeInOut(duration: 0.1), value: selectedMinutes)
                             }
                         }
                         .pickerStyle(WheelPickerStyle())
@@ -42,6 +44,8 @@ struct ContentView: View {
                                 Text("\(second)")
                                     .tag(second)
                                     .foregroundColor(selectedSeconds == second ? .green : .white)
+                                    .font(selectedSeconds == second ? .title : .body)
+                                    .animation(.easeInOut(duration: 0.1), value: selectedSeconds)
                             }
                         }
                         .pickerStyle(WheelPickerStyle())
