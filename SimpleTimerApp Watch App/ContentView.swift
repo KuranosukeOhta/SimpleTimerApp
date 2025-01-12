@@ -62,6 +62,16 @@ extension WKExtendedRuntimeSessionInvalidationReason {
     }
 }
 
+// タイマーの設定時間を管理する構造体
+struct TimerSettings {
+    let minutes: Int
+    let seconds: Int
+    
+    var totalSeconds: Int {
+        return minutes * 60 + seconds
+    }
+}
+
 struct TimePickerView: View {
     @Binding var minutes: Int
     @Binding var seconds: Int
@@ -123,13 +133,16 @@ struct TimePickerView: View {
 }
 
 struct ContentView: View {
-    // デフォルトの設定時間を定数として定義
-    private let defaultMinutes = 0
-    private let defaultSeconds = 10
+    // デフォルトの設定時間を構造体として定義
+    private let defaultSettings = TimerSettings(minutes: 0, seconds: 10)
     
-    @State private var selectedMinutes = 0  // 初期値をdefaultMinutesと同じに
-    @State private var selectedSeconds = 10  // 初期値をdefaultSecondsと同じに
-    @State private var timeRemaining = 10
+    // 前回設定した時間を保持する変数を追加
+    @State private var lastSetMinutes: Int
+    @State private var lastSetSeconds: Int
+    
+    @State private var selectedMinutes: Int
+    @State private var selectedSeconds: Int
+    @State private var timeRemaining: Int
     @State private var timer: Timer?
     @State private var hapticTimer: Timer?
     @State private var endTime: Date?
@@ -137,6 +150,16 @@ struct ContentView: View {
     @State private var isMinutesPickerFocused = false
     @State private var isSecondsPickerFocused = false
     @State private var isEditing = true
+    
+    // イニシャライザを追加
+    init() {
+        // デフォルト値で初期化
+        _lastSetMinutes = State(initialValue: defaultSettings.minutes)
+        _lastSetSeconds = State(initialValue: defaultSettings.seconds)
+        _selectedMinutes = State(initialValue: defaultSettings.minutes)
+        _selectedSeconds = State(initialValue: defaultSettings.seconds)
+        _timeRemaining = State(initialValue: defaultSettings.totalSeconds)
+    }
     
     var body: some View {
         GeometryReader { geometry in
@@ -213,6 +236,9 @@ struct ContentView: View {
     func startCountdown() {
         timer?.invalidate()
         if !isRunning {
+            // タイマー開始時に現在の設定時間を保存
+            lastSetMinutes = selectedMinutes
+            lastSetSeconds = selectedSeconds
             timeRemaining = selectedMinutes * 60 + selectedSeconds
             updateEndTime()
         }
@@ -274,17 +300,26 @@ struct ContentView: View {
                     // OKボタンが押されたら触覚フィードバックを停止
                     self.hapticTimer?.invalidate()
                     self.hapticTimer = nil
-                    // デフォルトの設定時間に戻す
-                    self.resetToDefault()
+                    // 前回設定した時間に戻す
+                    self.resetToLastSet()
                 })
             ])
         }
     }
 
+    // 前回設定した時間に戻す関数を追加
+    func resetToLastSet() {
+        selectedMinutes = lastSetMinutes
+        selectedSeconds = lastSetSeconds
+        timeRemaining = lastSetMinutes * 60 + lastSetSeconds
+        updateEndTime()
+    }
+    
+    // デフォルト時間に戻す関数を修正
     func resetToDefault() {
-        selectedMinutes = defaultMinutes
-        selectedSeconds = defaultSeconds
-        timeRemaining = defaultMinutes * 60 + defaultSeconds
+        selectedMinutes = defaultSettings.minutes
+        selectedSeconds = defaultSettings.seconds
+        timeRemaining = defaultSettings.totalSeconds
         updateEndTime()
     }
 }
