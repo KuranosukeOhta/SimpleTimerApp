@@ -69,8 +69,12 @@ struct TimePickerView: View {
 }
 
 struct ContentView: View {
-    @State private var selectedMinutes = 0
-    @State private var selectedSeconds = 10
+    // デフォルトの設定時間を定数として定義
+    private let defaultMinutes = 0
+    private let defaultSeconds = 10
+    
+    @State private var selectedMinutes = 0  // 初期値をdefaultMinutesと同じに
+    @State private var selectedSeconds = 10  // 初期値をdefaultSecondsと同じに
     @State private var timeRemaining = 10
     @State private var timer: Timer?
     @State private var hapticTimer: Timer?
@@ -78,7 +82,7 @@ struct ContentView: View {
     @State private var isRunning = false
     @State private var isMinutesPickerFocused = false
     @State private var isSecondsPickerFocused = false
-    @State private var isEditing = true  // 編集状態の管理を追加
+    @State private var isEditing = true
     
     var body: some View {
         GeometryReader { geometry in
@@ -100,8 +104,15 @@ struct ContentView: View {
                         updateEndTime()
                     }
                     
-                    if let endTime = endTime {
-                        Text(endTime.formatted(date: .numeric, time: .shortened))
+                    // 3分以上の場合のみ終了時刻を表示
+                    if let endTime = endTime, selectedMinutes * 60 + selectedSeconds >= 180 {
+                        Text(endTime.formatted(.dateTime
+                            .month(.defaultDigits)
+                            .day(.defaultDigits)
+                            .hour()
+                            .minute()
+                            .locale(Locale(identifier: "ja_JP"))
+                        ))
                             .font(.caption)
                             .foregroundColor(.gray)
                             .padding(.bottom, 5)
@@ -110,7 +121,7 @@ struct ContentView: View {
                     Button(action: {
                         isMinutesPickerFocused = false
                         isSecondsPickerFocused = false
-                        isEditing = false  // 編集状態を解除
+                        isEditing = false
                         
                         if isRunning {
                             pauseTimer()
@@ -205,9 +216,18 @@ struct ContentView: View {
                     // OKボタンが押されたら触覚フィードバックを停止
                     self.hapticTimer?.invalidate()
                     self.hapticTimer = nil
+                    // デフォルトの設定時間に戻す
+                    self.resetToDefault()
                 })
             ])
         }
+    }
+
+    func resetToDefault() {
+        selectedMinutes = defaultMinutes
+        selectedSeconds = defaultSeconds
+        timeRemaining = defaultMinutes * 60 + defaultSeconds
+        updateEndTime()
     }
 }
 
