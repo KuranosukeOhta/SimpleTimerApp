@@ -1,13 +1,13 @@
 //
-//  SinpleTimerApp_Watch_AppUITests.swift
-//  SinpleTimerApp Watch AppUITests
+//  SimpleTimerApp_Watch_AppUITests.swift
+//  SimpleTimerApp Watch AppUITests
 //
 //  Created by Kuranosuke Ohta on 2025/01/12.
 //
 
 import XCTest
 
-final class SinpleTimerApp_Watch_AppUITests: XCTestCase {
+final class SimpleTimerApp_Watch_AppUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

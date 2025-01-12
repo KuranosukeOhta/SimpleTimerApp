@@ -1,14 +1,14 @@
 //
-//  SinpleTimerApp_Watch_AppTests.swift
-//  SinpleTimerApp Watch AppTests
+//  SimpleTimerApp_Watch_AppTests.swift
+//  SimpleTimerApp Watch AppTests
 //
 //  Created by Kuranosuke Ohta on 2025/01/12.
 //
 
 import Testing
-@testable import SinpleTimerApp_Watch_App
+@testable import SimpleTimerApp_Watch_App
 
-struct SinpleTimerApp_Watch_AppTests {
+struct SimpleTimerApp_Watch_AppTests {
 
     @Test func example() async throws {
         // Write your test here and use APIs like `#expect(...)` to check expected conditions.

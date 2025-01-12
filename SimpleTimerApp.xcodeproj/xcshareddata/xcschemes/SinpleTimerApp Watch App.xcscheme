@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A28B93E32D32C5A800736352"
-               BuildableName = "SinpleTimerApp Watch App.app"
-               BlueprintName = "SinpleTimerApp Watch App"
-               ReferencedContainer = "container:SinpleTimerApp.xcodeproj">
+               BuildableName = "SimpleTimerApp Watch App.app"
+               BlueprintName = "SimpleTimerApp Watch App"
+               ReferencedContainer = "container:SimpleTimerApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A28B93DD2D32C5A800736352"
-               BuildableName = "SinpleTimerApp.app"
-               BlueprintName = "SinpleTimerApp"
-               ReferencedContainer = "container:SinpleTimerApp.xcodeproj">
+               BuildableName = "SimpleTimerApp.app"
+               BlueprintName = "SimpleTimerApp"
+               ReferencedContainer = "container:SimpleTimerApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -59,9 +59,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A28B93F52D32C5AA00736352"
-               BuildableName = "SinpleTimerApp Watch AppTests.xctest"
-               BlueprintName = "SinpleTimerApp Watch AppTests"
-               ReferencedContainer = "container:SinpleTimerApp.xcodeproj">
+               BuildableName = "SimpleTimerApp Watch AppTests.xctest"
+               BlueprintName = "SimpleTimerApp Watch AppTests"
+               ReferencedContainer = "container:SimpleTimerApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -70,9 +70,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A28B93FF2D32C5AA00736352"
-               BuildableName = "SinpleTimerApp Watch AppUITests.xctest"
-               BlueprintName = "SinpleTimerApp Watch AppUITests"
-               ReferencedContainer = "container:SinpleTimerApp.xcodeproj">
+               BuildableName = "SimpleTimerApp Watch AppUITests.xctest"
+               BlueprintName = "SimpleTimerApp Watch AppUITests"
+               ReferencedContainer = "container:SimpleTimerApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -92,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A28B93E32D32C5A800736352"
-            BuildableName = "SinpleTimerApp Watch App.app"
-            BlueprintName = "SinpleTimerApp Watch App"
-            ReferencedContainer = "container:SinpleTimerApp.xcodeproj">
+            BuildableName = "SimpleTimerApp Watch App.app"
+            BlueprintName = "SimpleTimerApp Watch App"
+            ReferencedContainer = "container:SimpleTimerApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -109,9 +109,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A28B93E32D32C5A800736352"
-            BuildableName = "SinpleTimerApp Watch App.app"
-            BlueprintName = "SinpleTimerApp Watch App"
-            ReferencedContainer = "container:SinpleTimerApp.xcodeproj">
+            BuildableName = "SimpleTimerApp Watch App.app"
+            BlueprintName = "SimpleTimerApp Watch App"
+            ReferencedContainer = "container:SimpleTimerApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

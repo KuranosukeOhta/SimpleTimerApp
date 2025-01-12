@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SinpleTimerApp Watch App
+//  SimpleTimerApp Watch App
 //
 //  Created by Kuranosuke Ohta on 2025/01/12.
 //

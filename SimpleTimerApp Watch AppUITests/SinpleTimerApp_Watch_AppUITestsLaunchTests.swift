@@ -1,13 +1,13 @@
 //
-//  SinpleTimerApp_Watch_AppUITestsLaunchTests.swift
-//  SinpleTimerApp Watch AppUITests
+//  SimpleTimerApp_Watch_AppUITestsLaunchTests.swift
+//  SimpleTimerApp Watch AppUITests
 //
 //  Created by Kuranosuke Ohta on 2025/01/12.
 //
 
 import XCTest
 
-final class SinpleTimerApp_Watch_AppUITestsLaunchTests: XCTestCase {
+final class SimpleTimerApp_Watch_AppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A28B93E52D32C5A800736352 /* SinpleTimerApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A28B93E52D32C5A800736352 /* SimpleTimerApp Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A28B93E42D32C5A800736352 /* SimpleTimerApp Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -16,21 +16,21 @@
 			containerPortal = A28B93D82D32C5A800736352 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A28B93E32D32C5A800736352;
-			remoteInfo = "SinpleTimerApp Watch App";
+			remoteInfo = "SimpleTimerApp Watch App";
 		};
 		A28B93F72D32C5AA00736352 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A28B93D82D32C5A800736352 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A28B93E32D32C5A800736352;
-			remoteInfo = "SinpleTimerApp Watch App";
+			remoteInfo = "SimpleTimerApp Watch App";
 		};
 		A28B94012D32C5AA00736352 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A28B93D82D32C5A800736352 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = A28B93E32D32C5A800736352;
-			remoteInfo = "SinpleTimerApp Watch App";
+			remoteInfo = "SimpleTimerApp Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -41,7 +41,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				A28B93E52D32C5A800736352 /* SinpleTimerApp Watch App.app in Embed Watch Content */,
+				A28B93E52D32C5A800736352 /* SimpleTimerApp Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -49,39 +49,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A28B93DE2D32C5A800736352 /* SinpleTimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinpleTimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SinpleTimerApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A28B93F62D32C5AA00736352 /* SinpleTimerApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SinpleTimerApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A28B94002D32C5AA00736352 /* SinpleTimerApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SinpleTimerApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28B93DE2D32C5A800736352 /* SimpleTimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28B93E42D32C5A800736352 /* SimpleTimerApp Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleTimerApp Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28B93F62D32C5AA00736352 /* SimpleTimerApp Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleTimerApp Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A28B94002D32C5AA00736352 /* SimpleTimerApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SimpleTimerApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A256DA9E2D3410F4009D5396 /* Exceptions for "SinpleTimerApp Watch App" folder in "SinpleTimerApp Watch App" target */ = {
+		A256DA9E2D3410F4009D5396 /* Exceptions for "SimpleTimerApp Watch App" folder in "SimpleTimerApp Watch App" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"SinpleTimerApp-Watch-App-Info.plist",
+				"SimpleTimerApp-Watch-App-Info.plist",
 			);
-			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+			target = A28B93E32D32C5A800736352 /* SimpleTimerApp Watch App */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A28B93E82D32C5A800736352 /* SinpleTimerApp Watch App */ = {
+		A28B93E82D32C5A800736352 /* SimpleTimerApp Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A256DA9E2D3410F4009D5396 /* Exceptions for "SinpleTimerApp Watch App" folder in "SinpleTimerApp Watch App" target */,
+				A256DA9E2D3410F4009D5396 /* Exceptions for "SimpleTimerApp Watch App" folder in "SimpleTimerApp Watch App" target */,
 			);
-			path = "SinpleTimerApp Watch App";
+			path = "SimpleTimerApp Watch App";
 			sourceTree = "<group>";
 		};
-		A28B93F92D32C5AA00736352 /* SinpleTimerApp Watch AppTests */ = {
+		A28B93F92D32C5AA00736352 /* SimpleTimerApp Watch AppTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SinpleTimerApp Watch AppTests";
+			path = "SimpleTimerApp Watch AppTests";
 			sourceTree = "<group>";
 		};
-		A28B94032D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */ = {
+		A28B94032D32C5AA00736352 /* SimpleTimerApp Watch AppUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "SinpleTimerApp Watch AppUITests";
+			path = "SimpleTimerApp Watch AppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -114,9 +114,9 @@
 		A28B93D72D32C5A800736352 = {
 			isa = PBXGroup;
 			children = (
-				A28B93E82D32C5A800736352 /* SinpleTimerApp Watch App */,
-				A28B93F92D32C5AA00736352 /* SinpleTimerApp Watch AppTests */,
-				A28B94032D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */,
+				A28B93E82D32C5A800736352 /* SimpleTimerApp Watch App */,
+				A28B93F92D32C5AA00736352 /* SimpleTimerApp Watch AppTests */,
+				A28B94032D32C5AA00736352 /* SimpleTimerApp Watch AppUITests */,
 				A28B93DF2D32C5A800736352 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,10 +124,10 @@
 		A28B93DF2D32C5A800736352 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A28B93DE2D32C5A800736352 /* SinpleTimerApp.app */,
-				A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */,
-				A28B93F62D32C5AA00736352 /* SinpleTimerApp Watch AppTests.xctest */,
-				A28B94002D32C5AA00736352 /* SinpleTimerApp Watch AppUITests.xctest */,
+				A28B93DE2D32C5A800736352 /* SimpleTimerApp.app */,
+				A28B93E42D32C5A800736352 /* SimpleTimerApp Watch App.app */,
+				A28B93F62D32C5AA00736352 /* SimpleTimerApp Watch AppTests.xctest */,
+				A28B94002D32C5AA00736352 /* SimpleTimerApp Watch AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,9 +135,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A28B93DD2D32C5A800736352 /* SinpleTimerApp */ = {
+		A28B93DD2D32C5A800736352 /* SimpleTimerApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A28B940E2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp" */;
+			buildConfigurationList = A28B940E2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp" */;
 			buildPhases = (
 				A28B93DC2D32C5A800736352 /* Resources */,
 				A28B940D2D32C5AA00736352 /* Embed Watch Content */,
@@ -147,16 +147,16 @@
 			dependencies = (
 				A28B93E72D32C5A800736352 /* PBXTargetDependency */,
 			);
-			name = SinpleTimerApp;
+			name = SimpleTimerApp;
 			packageProductDependencies = (
 			);
-			productName = SinpleTimerApp;
-			productReference = A28B93DE2D32C5A800736352 /* SinpleTimerApp.app */;
+			productName = SimpleTimerApp;
+			productReference = A28B93DE2D32C5A800736352 /* SimpleTimerApp.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */ = {
+		A28B93E32D32C5A800736352 /* SimpleTimerApp Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A28B940A2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch App" */;
+			buildConfigurationList = A28B940A2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp Watch App" */;
 			buildPhases = (
 				A28B93E02D32C5A800736352 /* Sources */,
 				A28B93E12D32C5A800736352 /* Frameworks */,
@@ -167,18 +167,18 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A28B93E82D32C5A800736352 /* SinpleTimerApp Watch App */,
+				A28B93E82D32C5A800736352 /* SimpleTimerApp Watch App */,
 			);
-			name = "SinpleTimerApp Watch App";
+			name = "SimpleTimerApp Watch App";
 			packageProductDependencies = (
 			);
-			productName = "SinpleTimerApp Watch App";
-			productReference = A28B93E42D32C5A800736352 /* SinpleTimerApp Watch App.app */;
+			productName = "SimpleTimerApp Watch App";
+			productReference = A28B93E42D32C5A800736352 /* SimpleTimerApp Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A28B93F52D32C5AA00736352 /* SinpleTimerApp Watch AppTests */ = {
+		A28B93F52D32C5AA00736352 /* SimpleTimerApp Watch AppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A28B94112D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppTests" */;
+			buildConfigurationList = A28B94112D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp Watch AppTests" */;
 			buildPhases = (
 				A28B93F22D32C5AA00736352 /* Sources */,
 				A28B93F32D32C5AA00736352 /* Frameworks */,
@@ -190,18 +190,18 @@
 				A28B93F82D32C5AA00736352 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A28B93F92D32C5AA00736352 /* SinpleTimerApp Watch AppTests */,
+				A28B93F92D32C5AA00736352 /* SimpleTimerApp Watch AppTests */,
 			);
-			name = "SinpleTimerApp Watch AppTests";
+			name = "SimpleTimerApp Watch AppTests";
 			packageProductDependencies = (
 			);
-			productName = "SinpleTimerApp Watch AppTests";
-			productReference = A28B93F62D32C5AA00736352 /* SinpleTimerApp Watch AppTests.xctest */;
+			productName = "SimpleTimerApp Watch AppTests";
+			productReference = A28B93F62D32C5AA00736352 /* SimpleTimerApp Watch AppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A28B93FF2D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */ = {
+		A28B93FF2D32C5AA00736352 /* SimpleTimerApp Watch AppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A28B94142D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppUITests" */;
+			buildConfigurationList = A28B94142D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp Watch AppUITests" */;
 			buildPhases = (
 				A28B93FC2D32C5AA00736352 /* Sources */,
 				A28B93FD2D32C5AA00736352 /* Frameworks */,
@@ -213,13 +213,13 @@
 				A28B94022D32C5AA00736352 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A28B94032D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */,
+				A28B94032D32C5AA00736352 /* SimpleTimerApp Watch AppUITests */,
 			);
-			name = "SinpleTimerApp Watch AppUITests";
+			name = "SimpleTimerApp Watch AppUITests";
 			packageProductDependencies = (
 			);
-			productName = "SinpleTimerApp Watch AppUITests";
-			productReference = A28B94002D32C5AA00736352 /* SinpleTimerApp Watch AppUITests.xctest */;
+			productName = "SimpleTimerApp Watch AppUITests";
+			productReference = A28B94002D32C5AA00736352 /* SimpleTimerApp Watch AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -248,7 +248,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A28B93DB2D32C5A800736352 /* Build configuration list for PBXProject "SinpleTimerApp" */;
+			buildConfigurationList = A28B93DB2D32C5A800736352 /* Build configuration list for PBXProject "SimpleTimerApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -262,10 +262,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A28B93DD2D32C5A800736352 /* SinpleTimerApp */,
-				A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */,
-				A28B93F52D32C5AA00736352 /* SinpleTimerApp Watch AppTests */,
-				A28B93FF2D32C5AA00736352 /* SinpleTimerApp Watch AppUITests */,
+				A28B93DD2D32C5A800736352 /* SimpleTimerApp */,
+				A28B93E32D32C5A800736352 /* SimpleTimerApp Watch App */,
+				A28B93F52D32C5AA00736352 /* SimpleTimerApp Watch AppTests */,
+				A28B93FF2D32C5AA00736352 /* SimpleTimerApp Watch AppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -328,17 +328,17 @@
 /* Begin PBXTargetDependency section */
 		A28B93E72D32C5A800736352 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+			target = A28B93E32D32C5A800736352 /* SimpleTimerApp Watch App */;
 			targetProxy = A28B93E62D32C5A800736352 /* PBXContainerItemProxy */;
 		};
 		A28B93F82D32C5AA00736352 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+			target = A28B93E32D32C5A800736352 /* SimpleTimerApp Watch App */;
 			targetProxy = A28B93F72D32C5AA00736352 /* PBXContainerItemProxy */;
 		};
 		A28B94022D32C5AA00736352 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+			target = A28B93E32D32C5A800736352 /* SimpleTimerApp Watch App */;
 			targetProxy = A28B94012D32C5AA00736352 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -465,12 +465,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SinpleTimerApp Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleTimerApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 279N7NDD2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SinpleTimerApp-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				INFOPLIST_FILE = "SimpleTimerApp-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleTimerApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,7 +478,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -496,12 +496,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SinpleTimerApp Watch App/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SimpleTimerApp Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 279N7NDD2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "SinpleTimerApp-Watch-App-Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				INFOPLIST_FILE = "SimpleTimerApp-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleTimerApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,7 +509,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp.watchkitapp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -527,9 +527,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 279N7NDD2S;
-				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleTimerApp;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -542,9 +542,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 279N7NDD2S;
-				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
+				INFOPLIST_KEY_CFBundleDisplayName = SimpleTimerApp;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -560,13 +560,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinpleTimerApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SinpleTimerApp Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimerApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleTimerApp Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Debug;
@@ -579,13 +579,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp-Watch-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SinpleTimerApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SinpleTimerApp Watch App";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimerApp Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SimpleTimerApp Watch App";
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -598,13 +598,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp-Watch-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "SinpleTimerApp Watch App";
+				TEST_TARGET_NAME = "SimpleTimerApp Watch App";
 				WATCHOS_DEPLOYMENT_TARGET = 11.2;
 			};
 			name = Debug;
@@ -616,13 +616,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SinpleTimerApp-Watch-AppUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "kuranosuke-ohta.SimpleTimerApp-Watch-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				TEST_TARGET_NAME = "SinpleTimerApp Watch App";
+				TEST_TARGET_NAME = "SimpleTimerApp Watch App";
 				VALIDATE_PRODUCT = YES;
 				WATCHOS_DEPLOYMENT_TARGET = 11.2;
 			};
@@ -631,7 +631,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A28B93DB2D32C5A800736352 /* Build configuration list for PBXProject "SinpleTimerApp" */ = {
+		A28B93DB2D32C5A800736352 /* Build configuration list for PBXProject "SimpleTimerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A28B94082D32C5AA00736352 /* Debug */,
@@ -640,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A28B940A2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch App" */ = {
+		A28B940A2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A28B940B2D32C5AA00736352 /* Debug */,
@@ -649,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A28B940E2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp" */ = {
+		A28B940E2D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A28B940F2D32C5AA00736352 /* Debug */,
@@ -658,7 +658,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A28B94112D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppTests" */ = {
+		A28B94112D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp Watch AppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A28B94122D32C5AA00736352 /* Debug */,
@@ -667,7 +667,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A28B94142D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SinpleTimerApp Watch AppUITests" */ = {
+		A28B94142D32C5AA00736352 /* Build configuration list for PBXNativeTarget "SimpleTimerApp Watch AppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A28B94152D32C5AA00736352 /* Debug */,
