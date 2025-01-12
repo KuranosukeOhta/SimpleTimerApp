@@ -106,7 +106,7 @@ struct ContentView: View {
                     
                     // 3分以上の場合のみ終了時刻を表示
                     if let endTime = endTime, selectedMinutes * 60 + selectedSeconds >= 180 {
-                        Text(endTime.formatted(.dateTime
+                        Text("終了時刻 " + endTime.formatted(.dateTime
                             .month(.defaultDigits)
                             .day(.defaultDigits)
                             .hour()
@@ -130,9 +130,8 @@ struct ContentView: View {
                         }
                     }) {
                         Text(isRunning ? "一時停止" : "開始")
-                            .frame(maxWidth: .infinity)
                     }
-                    .buttonStyle(BorderedButtonStyle(tint: .orange))
+                    .buttonStyle(BorderedButtonStyle(tint: isRunning ? .gray : .orange))
                 }
                 .padding(.top, 0)
                 .frame(minHeight: geometry.size.height)
