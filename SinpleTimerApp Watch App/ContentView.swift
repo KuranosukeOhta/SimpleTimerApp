@@ -8,6 +8,60 @@
 import SwiftUI
 import WatchKit
 
+// バックグラウンド実行のためのセッション管理クラス
+class ExtendedRuntimeManager: NSObject, WKExtendedRuntimeSessionDelegate {
+    static let shared = ExtendedRuntimeManager()
+    var session: WKExtendedRuntimeSession?
+    
+    func startSession() {
+        session?.invalidate()
+        session = WKExtendedRuntimeSession()
+        session?.delegate = self
+        session?.start()
+    }
+    
+    func stopSession() {
+        session?.invalidate()
+        session = nil
+    }
+    
+    // 必須のデリゲートメソッド
+    func extendedRuntimeSessionDidStart(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        print("バックグラウンドセッション開始")
+    }
+    
+    func extendedRuntimeSessionWillExpire(_ extendedRuntimeSession: WKExtendedRuntimeSession) {
+        print("バックグラウンドセッション終了予定")
+    }
+    
+    func extendedRuntimeSession(_ extendedRuntimeSession: WKExtendedRuntimeSession, didInvalidateWith reason: WKExtendedRuntimeSessionInvalidationReason, error: Error?) {
+        let reasonText = error?.localizedDescription ?? reason.description
+        print("バックグラウンドセッション終了理由: \(reasonText)")
+    }
+}
+
+// 無効化理由の説明を追加
+extension WKExtendedRuntimeSessionInvalidationReason {
+    var description: String {
+        switch self {
+        case .error:
+            return "セッションの実行を妨げるエラーが発生しました"
+        case .none:
+            return "セッションは正常に終了しました"
+        case .sessionInProgress:
+            return "既に実行中のセッションが存在します"
+        case .expired:
+            return "割り当てられた時間を使い切りました"
+        case .resignedFrontmost:
+            return "アプリがフォアグラウンドから外れました"
+        case .suppressedBySystem:
+            return "システムがこのタイプのセッションを許可していません"
+        @unknown default:
+            return "不明な理由"
+        }
+    }
+}
+
 struct TimePickerView: View {
     @Binding var minutes: Int
     @Binding var seconds: Int
@@ -159,18 +213,19 @@ struct ContentView: View {
     func startCountdown() {
         timer?.invalidate()
         if !isRunning {
-            // タイマーが停止状態から開始される場合のみ初期化
             timeRemaining = selectedMinutes * 60 + selectedSeconds
             updateEndTime()
         }
+        
+        // バックグラウンド実行セッションを開始
+        ExtendedRuntimeManager.shared.startSession()
         
         // タイマー開始時の触覚フィードバック
         WKInterfaceDevice.current().play(.start)
         
         isRunning = true
-        isEditing = false  // タイマー開始時に編集状態を解除
+        isEditing = false
 
-        // 1秒ごとにカウントダウンを更新するタイマーを設定
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { _ in
             if timeRemaining > 0 {
                 timeRemaining -= 1
@@ -181,7 +236,9 @@ struct ContentView: View {
             } else {
                 timer?.invalidate()
                 isRunning = false
-                isEditing = true  // タイマー終了時に編集状態を有効化
+                isEditing = true
+                // バックグラウンド実行セッションを終了
+                ExtendedRuntimeManager.shared.stopSession()
                 alertTimer()
             }
         }
@@ -191,7 +248,9 @@ struct ContentView: View {
         timer?.invalidate()
         timer = nil
         isRunning = false
-        isEditing = true  // 一時停止時に編集状態を有効化
+        isEditing = true
+        // バックグラウンド実行セッションを終了
+        ExtendedRuntimeManager.shared.stopSession()
         // 一時停止時の触覚フィードバック
         WKInterfaceDevice.current().play(.stop)
     }

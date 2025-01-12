@@ -55,9 +55,22 @@
 		A28B94002D32C5AA00736352 /* SinpleTimerApp Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SinpleTimerApp Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		A256DA9E2D3410F4009D5396 /* Exceptions for "SinpleTimerApp Watch App" folder in "SinpleTimerApp Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"SinpleTimerApp-Watch-App-Info.plist",
+			);
+			target = A28B93E32D32C5A800736352 /* SinpleTimerApp Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		A28B93E82D32C5A800736352 /* SinpleTimerApp Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				A256DA9E2D3410F4009D5396 /* Exceptions for "SinpleTimerApp Watch App" folder in "SinpleTimerApp Watch App" target */,
+			);
 			path = "SinpleTimerApp Watch App";
 			sourceTree = "<group>";
 		};
@@ -456,6 +469,7 @@
 				DEVELOPMENT_TEAM = 279N7NDD2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SinpleTimerApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -486,6 +500,7 @@
 				DEVELOPMENT_TEAM = 279N7NDD2S;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SinpleTimerApp-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SinpleTimerApp;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
