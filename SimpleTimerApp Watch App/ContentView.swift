@@ -63,13 +63,18 @@ extension WKExtendedRuntimeSessionInvalidationReason {
 }
 
 // タイマーの設定時間を管理する構造体
-struct TimerSettings {
+struct TimerSettings: Codable {
     let minutes: Int
     let seconds: Int
     
     var totalSeconds: Int {
         return minutes * 60 + seconds
     }
+}
+
+// UserDefaultsのキーを管理する列挙型
+private enum UserDefaultsKeys {
+    static let lastTimer = "lastTimer"
 }
 
 struct TimePickerView: View {
@@ -153,12 +158,21 @@ struct ContentView: View {
     
     // イニシャライザを追加
     init() {
-        // デフォルト値で初期化
-        _lastSetMinutes = State(initialValue: defaultSettings.minutes)
-        _lastSetSeconds = State(initialValue: defaultSettings.seconds)
-        _selectedMinutes = State(initialValue: defaultSettings.minutes)
-        _selectedSeconds = State(initialValue: defaultSettings.seconds)
-        _timeRemaining = State(initialValue: defaultSettings.totalSeconds)
+        // UserDefaultsから前回の設定を読み込む
+        let savedSettings: TimerSettings
+        if let data = UserDefaults.standard.data(forKey: UserDefaultsKeys.lastTimer),
+           let decoded = try? JSONDecoder().decode(TimerSettings.self, from: data) {
+            savedSettings = decoded
+        } else {
+            savedSettings = defaultSettings
+        }
+        
+        // 状態を初期化
+        _lastSetMinutes = State(initialValue: savedSettings.minutes)
+        _lastSetSeconds = State(initialValue: savedSettings.seconds)
+        _selectedMinutes = State(initialValue: savedSettings.minutes)
+        _selectedSeconds = State(initialValue: savedSettings.seconds)
+        _timeRemaining = State(initialValue: savedSettings.totalSeconds)
     }
     
     var body: some View {
@@ -241,6 +255,13 @@ struct ContentView: View {
             lastSetSeconds = selectedSeconds
             timeRemaining = selectedMinutes * 60 + selectedSeconds
             updateEndTime()
+            
+            // 設定をUserDefaultsに保存
+            let settings = TimerSettings(minutes: selectedMinutes, seconds: selectedSeconds)
+            if let encoded = try? JSONEncoder().encode(settings) {
+                UserDefaults.standard.set(encoded, forKey: UserDefaultsKeys.lastTimer)
+                UserDefaults.standard.synchronize()  // 確実に保存するために同期を実行
+            }
         }
         
         // バックグラウンド実行セッションを開始
@@ -313,6 +334,13 @@ struct ContentView: View {
         selectedSeconds = lastSetSeconds
         timeRemaining = lastSetMinutes * 60 + lastSetSeconds
         updateEndTime()
+        
+        // 設定をUserDefaultsに保存
+        let settings = TimerSettings(minutes: lastSetMinutes, seconds: lastSetSeconds)
+        if let encoded = try? JSONEncoder().encode(settings) {
+            UserDefaults.standard.set(encoded, forKey: UserDefaultsKeys.lastTimer)
+            UserDefaults.standard.synchronize()  // 確実に保存するために同期を実行
+        }
     }
     
     // デフォルト時間に戻す関数を修正
